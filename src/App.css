@@ -1,0 +1,119 @@
+/* Full-Screen Calendar */
+.calendar-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+}
+
+/* Header with navigation and button */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Title styling */
+.date-text {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* Create Schedule Button */
+.add-event-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.add-event-button:hover {
+  background-color: #0056b3;
+}
+
+.year-selector {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.relative {
+  position: relative !important;
+}
+.bg-blue-500 {
+  background-color: #3b82f6 !important;
+}
+.text-white {
+  color: white !important;
+}
+.fc-event-custom {
+  display: block !important;
+  width: 100% !important;
+}
+
+.custom-event {
+  background-color: #d0e7ff !important; /* Light blue background */
+  color: #000 !important; /* Black text */
+  border-left: 6px solid #007bff !important; /* Thick blue left border */
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  position: relative; /* For positioning count indicator */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.custom-event p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #333;
+}
+
+.event-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ffc107; /* Yellow background */
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
